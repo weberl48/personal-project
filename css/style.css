@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color: #FFFEFD;
+	font-family: inherit;
+	z-index: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+	margin-left: 20px;
+	color: #F9F2D0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	color: #F9F2D0;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-family: inherit;
+	font-size: medium;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+.container {
+width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: black;
+	height:90px;
+	
+}
+
+.logo {
+    float: left;
+}
+.logo img {
+    width: 180px;
+    height: 90px;
+
+}
+
+.nav{
+    
+    list-style:none;
+    margin-left: 50px;
+    padding:0;
+	padding-top:30px;
+    text-align:center;
+	
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:35px;
+	color: #FFF;
+	text-decoration:none;
+}
+.nav a:hover,active{
+	
+	color:#966F33;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.container {
+	resize: none;
+	padding: 10px 0;
+	background: url(images/rock.jpg) ;
+	background-size: 960px 960px;
+    background-repeat: no-repeat;
+	height: 800px;
+	width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.trans {
+	width: 858px;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid white;
+	/* [disabled]height: 400px; */
+	margin: 30px 50px;
+	border: 1px solid white;
+	position: absolute;
+	
+  	
+}
+
+
+
+
+.button {
+	text-align: center;
+	display: inherit;
+}
+
+img.office {
+   
+    display: block;
+}
+
+#table {
+	width:859
+ border:0;
+	 align:center;
+	cellpadding:10;
+	  cellspacing:20;
+}
+
+#table th {
+width:392; 
+height:57; 
+scope:col;	
+}
+
+.content {
+	resize:none;
+	padding: 10px 0;
+	
+	height:800px;
+
+}
